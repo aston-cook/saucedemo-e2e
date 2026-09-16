@@ -1,0 +1,19 @@
+{
+  "name": "saucedemo-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript end-to-end tests for https://www.saucedemo.com",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.3",
+    "typescript": "^7.0.2"
+  }
+}

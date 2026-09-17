@@ -75,6 +75,24 @@ tests/*.spec.ts        the tests
 - **Strict TypeScript.** `strict` plus `noUncheckedIndexedAccess`. Playwright doesn't
   type-check tests itself, so `npm run typecheck` runs `tsc` separately.
 
+
+## How I used AI
+
+The brief said to use AI, so here is where the line was.
+
+- **Mine:** the architecture and the test selection. A setup project with
+  `storageState` rather than logging in per test, page objects plus fixtures
+  rather than `beforeEach`, `getByTestId` pointed at `data-test`, no assertions
+  inside page objects, and the four things worth testing on a shop.
+- **AI's:** most of the typing, written against that spec.
+- **What I changed:** it over-commented and wrote large undifferentiated blocks.
+  I cut that back so the next person who has to maintain or extend this can read
+  it, rather than wading through everything at once.
+- **How I checked it:** I read every spec and page object and checked the choices
+  against what I know about the framework, then ran the suite in headed mode and
+  watched each step execute, to confirm the flows were doing what the assertions
+  claimed.
+
 ## To Do
 
 Things I would add with more time, roughly in priority order:
